@@ -18,4 +18,11 @@ public class GetController {
     String homeCustoms(){
         return "/v1/api/test/customs";
     }
+
+    @GetMapping("/api2/v1/account")
+    @ResponseBody/**/
+    String homeCustomIntercepts(){
+        System.out.println("customs intercept ---> /api2/v1/account");
+        return "/api2/v1/account";
+    }
 }
