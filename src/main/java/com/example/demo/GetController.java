@@ -12,4 +12,10 @@ public class GetController {
     String home(){
         return "hello world 4";
     }
+
+    @GetMapping("/v1/api/test/customs")
+    @ResponseBody/**/
+    String homeCustoms(){
+        return "/v1/api/test/customs";
+    }
 }

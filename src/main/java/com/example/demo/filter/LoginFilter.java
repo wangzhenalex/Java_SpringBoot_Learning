@@ -18,16 +18,16 @@ public class LoginFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         System.out.println("doFilter");
 
-        HttpServletRequest req =(HttpServletRequest)servletRequest;
-        HttpServletResponse resp =(HttpServletResponse)servletResponse;
+//        HttpServletRequest req =(HttpServletRequest)servletRequest;
+//        HttpServletResponse resp =(HttpServletResponse)servletResponse;
 
-        String name = req.getParameter("name");
-        if ("alex".equals((name)))
-        {
+//        String name = req.getParameter("name");
+//        if ("alex".equals((name)))
+//        {
             filterChain.doFilter(servletRequest,servletResponse);
-        }else {
-            return;
-        }
+//        }else {
+//            return;
+//        }
     }
 
     @Override
