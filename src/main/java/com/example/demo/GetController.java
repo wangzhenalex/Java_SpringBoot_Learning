@@ -1,4 +1,4 @@
-package com.example.demo.filter;
+package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -10,6 +10,6 @@ public class GetController {
     @GetMapping("/hello")
     @ResponseBody/**/
     String home(){
-        return "hello world";
+        return "hello world 4";
     }
 }

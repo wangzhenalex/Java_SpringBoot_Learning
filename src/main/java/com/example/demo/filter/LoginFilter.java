@@ -32,6 +32,6 @@ public class LoginFilter implements Filter {
 
     @Override
     public void destroy() {
-        System.out.println("destroy");
+        System.out.println("destroy2");
     }
 }
