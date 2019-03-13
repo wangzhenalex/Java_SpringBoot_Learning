@@ -1,6 +1,17 @@
 # Java_Spring_Demo
 java spring-boot 学习项目
 
+##   章节8 数据库操作
+### 持久化
+    *   原生Java sql
+    *   DbUtil
+    *   spring-date-jpa
+    *   Hibernate   ORM
+    *   Mybatis 互联网行业   不提供直接映射，半ORM
+
+####    MyBatis
+
+
 ##  章节7 Starter
 ### Spring Starter
 ### 模板引擎
