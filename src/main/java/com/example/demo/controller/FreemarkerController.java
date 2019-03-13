@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.controller;
 
+import com.example.demo.domain.ServerSettings;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,8 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/freemarker")
 public class FreemarkerController {
 
+    @Autowired
+    private ServerSettings settings;
+
     @GetMapping("hello")
     public String index(ModelMap modelMap){
-        return "fm/user/index";
+        modelMap.addAttribute("settings",settings);
+        return "fm/index";
     }
 }
