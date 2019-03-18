@@ -6,6 +6,14 @@ public class User {
 
     private int id;
 
+    private String name;
+
+    private String phone;
+
+    private int age;
+
+    private Date createTime;
+
     public int getId() {
         return id;
     }
@@ -30,6 +38,14 @@ public class User {
         this.phone = phone;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public Date getCreateTime() {
         return createTime;
     }
@@ -38,8 +54,7 @@ public class User {
         this.createTime = createTime;
     }
 
-    private  String name;
-    private  String phone;
-    private Date createTime;
+
+
 
 }
